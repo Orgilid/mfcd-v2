@@ -1,0 +1,16 @@
+{
+  "name": "mfcdb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:dist/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "bulma": "^1.0.4",
+    "sass": "^1.87.0"
+  }
+}

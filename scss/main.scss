@@ -1,0 +1,50 @@
+@import "../node_modules/bulma/bulma.scss";
+
+.center,
+.center-column,
+.top,
+.bottom,
+.right,
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-column {
+    flex-direction: column;
+}
+.top {
+    align-items: flex-start;
+}
+.bottom {
+    align-items: flex-end;
+}
+.left {
+    justify-content: flex-start;
+}
+.right {
+    justify-content: flex-end;
+}
+.single-spaced,
+.single-spaced * {
+    line-height: 1;
+}
+@media (max-width:1024px) {
+    .desktop {
+        display: none;
+    }
+}
+// hero img
+.hero {
+    background: url("../img/bg1.jpg") center/cover;
+}
+@media (max-width:1024px) {
+    .hero {
+        background: url("../img/bg2.jpg") center/cover;
+    }
+}
+@media (max-width:768px) {
+    .hero {
+        background: url("../img/bg3.jpg") center/cover;
+    }
+}
