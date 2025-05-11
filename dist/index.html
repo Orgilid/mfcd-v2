@@ -1,52 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <script defer src="./js/all.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mongolian Food Composition Database">
+    <meta name="keywords" content="nutrition, food composition, mongolian traditional foods">
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/fontawesomeall.min.js"></script>
     <title>Mongolian Food Composition Database</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Нэг дүгээр хэсэг Үндсэн цэс, газрын зураг -->
     <section class="hero is-fullheight">
-        <div class="hero-head">
-            <header class="navbar is-transparent">
-                <div class="navbar-brand">
-                    <a href="#" class="navbar-item">
-                        <img src="./img/mgl.png" alt="logo">
-                    </a>
-                    <a class="navbar-burger" data-target="navbarMenuHero">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
-                <div class="navbar-menu has-text-weight-semibold" id="navbarMenuHero">
-                    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-                        <a href="#" class="navbar-item">Overview</a>
-                        <a href="#" class="navbar-item">Search</a>
-                        <a href="#" class="navbar-item">Food Calculator</a>
-                        <a href="#" class="navbar-item">Books</a>
-                        <a href="#" class="navbar-item">Contact us</a>
-                    </div>
-                    <div class="navbar-end">
-                        <a href="#" class="navbar-item">MN</a>
-                    </div>
-                </div>
-            </header>
+      <!-- Үндсэн цэс -->
+      <div class="hero-head">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a href="#" class="navbar-item has-text-weight-bold is-uppercase">
+                <figure class="image">
+                  <img src="./img/icon/icon.png" alt="logo" />
+                </figure>
+                <p><span>Mongolian</span> Food Composition Database</p>
+              </a>
+              <a class="navbar-burger" role="button" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="navbar-menu has-text-weight-semibold has-text-centered" id="navbarMenu">
+              <div class="navbar-start" style="flex-grow: 1; justify-content: right;">
+                <a href="#" class="navbar-item"><i class="fas fa-circle-question"></i> Overview</a>
+                <a href="#" class="navbar-item"><span class="icon"><i class="fas fa-search"></i></span> Search</a>
+                <a href="#" class="navbar-item"><i class="fas fa-calculator"></i> Food Calculator</a>
+                <a href="#" class="navbar-item"><span class="icon"><i class="fas fa-book"></i></span> Books</a>
+                <a href="#" class="navbar-item"><i class="fas fa-address-card"></i> Contact us</a>
+              </div>
+              <div class="navbar-end">
+                <a href="#" class="navbar-item">MN</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <!-- Газрын зураг ба Төслийн агуулга -->
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="is-size-4-mobile is-size-3-tablet is-size-2-desktop has-text-weight-semibold has-text-centered txt-h">Food Composition Table</h1>
+          <div class="columns is-descktop">
+            <div class="column is-two-thirds-desktop">
+              <div id="svg-container"></div>
+            </div>
+            <div class="column is-one-third-desktop content">
+              <p class="txt">
+                In Mongolia, the first “Food composition table” was established
+                and published in 1997. It contains information for the following
+                eight groups of products. In the first FCT, a total of 12
+                nutrients of protein, fat, carbohydrates, fiber, ash, and
+                vitamins A, C, E, Ca, K, Na, and Fe are covered in 288 products
+                of the above eight groups. It was managed by the Ministry of
+                Food, agriculture, and Light Industry. The FCT is available in
+                hard copy. It contains few types of foods and has not been
+                updated for more than 20 years.
+              </p>              
+            </div>
+          </div>
         </div>
-        <div class="hero-body">
-            <div class="has-text-centered">                
-                <h1 class="title">Food Composition Table</h1>
-                <p class="subtitle" >Food Composition Table
-                    In Mongolia, the first “Food composition table” was established and published in 1997. It contains information for the following eight groups of products. In the first FCT, a total of 12 nutrients of protein, fat, carbohydrates, fiber, ash, and vitamins A, C, E, Ca, K, Na, and Fe are covered in 288 products of the above eight groups. It was managed by the Ministry of Food, agriculture, and Light Industry. The FCT is available in hard copy. It contains few types of foods and has not been updated for more than 20 years.</p>
-                    
+      </div>
+    </section>
+    <!-- Хоёр дугаар хэсэг Хайх, харуулах -->
+    <section class="section is-fullheight">
+        <div class="container">
+          <h1 class="is-size-4-mobile is-size-3-tablet is-size-2-desktop has-text-weight-semibold has-text-centered txt-h">Food Composition Database</h1>
+            <div class="columns is-descktop">
+              <!-- Хайх хэсэг --> 
+              <div class="column is-one-third-desktop" style="background-color: gray;">
+
+              </div>
+              <!-- Харуулах хэсэг -->
+              <div class="column is-two-thirds-desktop">
+                <!-- Proximates -->
+                <div class="table-container box tbl">
+                  <h2 class="subtitle is-5 has-text-weight-bold has-text-centered">Proximates</h2>
+                  <table id="tblProximates" class="table is-striped is-bordered is-hoverable is-fullwidth">
+                    <thead>
+                      <tr>
+                        <th>Food name</th>
+                        <th>Energy</th>
+                        <th>Water</th>
+                        <th>Protein</th>
+                        <th>Fat</th>
+                        <th>Ash</th>
+                        <th>Carbohydrate</th>
+                        <th>Total dietary fiber</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Wheat, whole, raw</td>
+                        <td>362.21 kcal</td>
+                        <td>13.56 g</td>
+                        <td>12.48 g</td>
+                        <td>1.77 g</td>
+                        <td>1.35 g</td>
+                        <td>70.84 g</td>
+                        <td>6.50 g</td>
+                      </tr>
+                      <tr>
+                        <td>Barley, whole, raw</td>
+                        <td>362.21 kcal</td>
+                        <td>13.56 g</td>
+                        <td>12.48 g</td>
+                        <td>1.77 g</td>
+                        <td>1.35 g</td>
+                        <td>70.84 g</td>
+                        <td>6.50 g</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <br>
+                <!-- Minerals -->
+                <div class="table-container box tbl">
+                  <h2 class="subtitle is-5 has-text-weight-bold has-text-centered">Minerals</h2>
+                  <table id="tblMinerals" class="table is-striped is-bordered is-hoverable is-fullwidth">
+                    <thead>
+                      <tr>
+                        <th>Food name</th>
+                        <th>Calcium</th>
+                        <th>Iron</th>
+                        <th>Magnesium</th>
+                        <th>Phosphorus</th>
+                        <th>Potassium</th>
+                        <th>Sodium </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Wheat, whole, raw</td>
+                        <td>77.8 mg</td>
+                        <td>23.37 mg</td>
+                        <td>25.52 mg</td>
+                        <td>22.98 mg</td>
+                        <td>7.77 mg</td>
+                        <td>1.87 mg</td>                          
+                      </tr>
+                      <tr>
+                        <td>Barley, whole, raw</td>
+                        <td>96.6 mg</td>
+                        <td>41.39 mg</td>
+                        <td>28.40 mg</td>
+                        <td>19.75 mg</td>
+                        <td>9.55 mg</td>
+                        <td>2.07 mg</td>                          
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <br>
+                <!-- Vitamins -->
+                <div class="table-container box tbl">
+                  <h2 class="subtitle is-5 has-text-weight-bold has-text-centered">Vitamins</h2>
+                  <table id="tblMinerals" class="table is-striped is-bordered is-hoverable is-fullwidth">
+                    <thead>
+                      <tr>
+                        <th>Food name</th>
+                        <th>Vitamin A</th>
+                        <th>Thiamin</th>
+                        <th>Riboflavin</th>
+                        <th>Folic acid </th>
+                        <th>Vitamin C </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Wheat, whole, raw</td>
+                        <td>9.97 μg</td>
+                        <td>0.449 mg</td>
+                        <td>0.146 mg</td>
+                        <td>99.6 μg</td>
+                        <td>16.233 mg</td>                          
+                      </tr>
+                      <tr>
+                        <td>Barley, whole, raw</td>
+                        <td>0.00 μg</td>
+                        <td>0.328 mg</td>
+                        <td>0.130 mg</td>
+                        <td>475.6 μg</td>
+                        <td>12.887 mg</td>                          
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+              </div>
+
 
             </div>
         </div>
     </section>
 
-    
-</body>
+    <!-- Modal -->
+    <div class="modal" id="infoModal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title" id="modalTitle">Аймгийн нэр</p>
+          <button class="delete" aria-label="close" onclick="closeModal()"></button>
+        </header>
+        <section class="modal-card-body">
+          <p id="modalContent">Аймгийн мэдээлэл энд гарна.</p>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-primary" onclick="closeModal()">Close</button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="/dist/js/navbar.js"></script>
+    <script src="/dist/js/map.js"></script>
+  </body>
 </html>
