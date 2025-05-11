@@ -57,7 +57,7 @@ $primary: $primaryColor;
 }
 // table
 .tbl {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -69,7 +69,9 @@ $primary: $primaryColor;
     line-height: 1.4;
     letter-spacing: 0.8px;
   }
-
+  .tbl {
+    font-size: 0.7rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -104,4 +106,24 @@ $primary: $primaryColor;
   path:hover {
     fill: #ff914d;
   }
+}
+// sidebar
+.menu {
+  max-height: 100vh; /* дэлгэцийн өндөрт багтаах */
+  overflow-y: auto;  /* босоо scrollbar идэвхжүүлнэ */
+}
+
+.sublist {
+  margin-left: 1.5rem;
+}
+.is-hidden {
+  display: none;
+}
+.toggle-sublist {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.toggle-sublist .icon {
+  margin-right: 0.5rem;
 }

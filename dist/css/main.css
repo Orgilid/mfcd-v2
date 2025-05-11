@@ -22526,7 +22526,7 @@ has-background-danger.is-hoverable:active {
 }
 
 .tbl {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -22537,6 +22537,9 @@ has-background-danger.is-hoverable:active {
   .txt-h {
     line-height: 1.4;
     letter-spacing: 0.8px;
+  }
+  .tbl {
+    font-size: 0.7rem;
   }
 }
 @media (min-width: 1024px) {
@@ -22567,6 +22570,29 @@ has-background-danger.is-hoverable:active {
 }
 #svg-container svg path:hover {
   fill: #ff914d;
+}
+
+.menu {
+  max-height: 100vh; /* дэлгэцийн өндөрт багтаах */
+  overflow-y: auto; /* босоо scrollbar идэвхжүүлнэ */
+}
+
+.sublist {
+  margin-left: 1.5rem;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.toggle-sublist {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-sublist .icon {
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

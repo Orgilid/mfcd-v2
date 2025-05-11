@@ -7,6 +7,8 @@
     <meta name="keywords" content="nutrition, food composition, mongolian traditional foods">
     <link rel="stylesheet" href="./css/main.css" />
     <script defer src="./js/fontawesomeall.min.js"></script>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Mongolian Food Composition Database</title>
   </head>
   <body>
@@ -70,17 +72,33 @@
         </div>
       </div>
     </section>
-    <!-- Хоёр дугаар хэсэг Хайх, харуулах -->
+    <!-- Хоёр дугаар хэсэг Хайх, Харуулах -->
     <section class="section is-fullheight">
         <div class="container">
           <h1 class="is-size-4-mobile is-size-3-tablet is-size-2-desktop has-text-weight-semibold has-text-centered txt-h">Food Composition Database</h1>
             <div class="columns is-descktop">
               <!-- Хайх хэсэг --> 
-              <div class="column is-one-third-desktop" style="background-color: gray;">
-
+              <div class="column is-one-quarter-desktop is-one-quarter-tablet">
+                <aside class="box content">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, velit?</p>
+                </aside>
+                <br>
+                <aside class="menu box">
+                  <p class="menu-label">Food Groups</p>
+                  <ul class="menu-list">
+                    <li>
+                      <a class="toggle-sublist">Cereals and Cereal products
+                      </a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="wheat whole raw"> Wheat, whole, raw</li>
+                        <li><input type="checkbox" name="fn" value="barley whole raw"> Barley, whole, raw</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </aside>
               </div>
               <!-- Харуулах хэсэг -->
-              <div class="column is-two-thirds-desktop">
+              <div class="column">
                 <!-- Proximates -->
                 <div class="table-container box tbl">
                   <h2 class="subtitle is-5 has-text-weight-bold has-text-centered">Proximates</h2>
@@ -221,5 +239,9 @@
 
     <script src="/dist/js/navbar.js"></script>
     <script src="/dist/js/map.js"></script>
+    <script src="/dist/js/aside.js"></script>
+
+
+
   </body>
 </html>
