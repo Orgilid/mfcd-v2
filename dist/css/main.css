@@ -22483,6 +22483,17 @@ has-background-danger.is-hoverable:active {
   color: #ff914d;
 }
 
+.is-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* дээр харагдахаар */
+  background-color: #f5f5f5; /* эсвэл өөр өнгө */
+}
+
+.navbar-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
 .center,
 .center-column,
 .top,
@@ -22573,8 +22584,10 @@ has-background-danger.is-hoverable:active {
 }
 
 .menu {
-  max-height: 100vh; /* дэлгэцийн өндөрт багтаах */
+  max-height: 50vh; /* дэлгэцийн өндөрт багтаах */
   overflow-y: auto; /* босоо scrollbar идэвхжүүлнэ */
+  overflow-x: auto; /* x тэнхлэгт scroll идэвхжүүлнэ */
+  white-space: nowrap; /* мөр таслахгүй, нэг эгнээ байлгах */
 }
 
 .sublist {
