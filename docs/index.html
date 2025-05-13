@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mongolian Food Composition Database">
+    <meta name="keywords" content="nutrition, food composition, mongolian traditional foods">
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/fontawesomeall.min.js"></script>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Mongolian Food Composition Database</title>
+  </head>
+  <body>
+    <!-- 1. Үндсэн цэс, газрын зураг ба танилцуулга -->
+    <section id="hero" class="hero is-fullheight">
+      <!-- 1.1. Үндсэн цэс -->
+      <div class="hero-head is-sticky navbar-shadow">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a href="#" class="navbar-item has-text-weight-bold is-uppercase">
+                <figure class="image">
+                  <img src="./img/icon/icon.png" alt="logo" />
+                </figure>
+                <p><span>Mongolian</span> Food Composition Database</p>
+              </a>
+              <a class="navbar-burger" role="button" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="navbar-menu has-text-weight-semibold has-text-centered" id="navbarMenu">
+              <div class="navbar-start" style="flex-grow: 1; justify-content: right;">
+                <a href="#hero" class="navbar-item"><i class="fas fa-circle-question"></i> Overview</a>
+                <a href="#search" class="navbar-item"><span class="icon"><i class="fas fa-search"></i></span> Search</a>
+                <a href="#" class="navbar-item"><i class="fas fa-calculator"></i> Food Calculator</a>
+                <a href="#" class="navbar-item"><span class="icon"><i class="fas fa-book"></i></span> Books</a>
+                <a href="#" class="navbar-item"><i class="fas fa-address-card"></i> Contact us</a>
+              </div>
+              <div class="navbar-end">
+                <a href="#" class="navbar-item">MN</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <!-- 1.2. Газрын зураг ба Төслийн агуулга -->
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="is-size-4-mobile is-size-3-tablet is-size-2-desktop has-text-weight-semibold has-text-centered txt-h">Food Composition Table</h1>
+          <div class="columns is-descktop">
+            <div class="column is-two-thirds-desktop">
+              <div id="svg-container"></div>
+            </div>
+            <div class="column is-one-third-desktop content">
+              <p class="txt">
+                In Mongolia, the first “Food composition table” was established
+                and published in 1997. It contains information for the following
+                eight groups of products. In the first FCT, a total of 12
+                nutrients of protein, fat, carbohydrates, fiber, ash, and
+                vitamins A, C, E, Ca, K, Na, and Fe are covered in 288 products
+                of the above eight groups. It was managed by the Ministry of
+                Food, agriculture, and Light Industry. The FCT is available in
+                hard copy. It contains few types of foods and has not been
+                updated for more than 20 years.
+              </p>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 2. Хайх ба Харуулах -->
+    <section id="search" class="section is-fullheight">
+        <div class="container">
+          <h1 class="is-size-4-mobile is-size-3-tablet is-size-2-desktop has-text-weight-semibold has-text-centered txt-h">Food Composition Database</h1>
+            <div class="columns is-descktop">
+              <!-- 2.1. Хайх хэсэг --> 
+              <div class="column is-one-quarter-desktop is-one-quarter-tablet">
+                <!-- 2.1.1. Үг бичиж хайх-->
+                <div class="container box">
+                  <div class="field has-addons">
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Food Name">
+                    </div>
+                    <div class="control">
+                      <button class="button is-primary">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                  <br>
+                  <!-- checkbox -->
+                  <div class="field">
+                    <label class="label">Nutrition</label>
+                    <div class="control">
+                      <label class="checkbox"><input type="checkbox" checked name="nutrition" value="proximates"> Proximates</label>
+                    </div>
+                    <div class="control">
+                      <label class="checkbox"><input type="checkbox" checked  name="nutrition" value="minerals"> Minerals</label>
+                    </div>
+                    <div class="control">
+                      <label class="checkbox"><input type="checkbox" checked  name="nutrition" value="vitamins"> Vitamins</label>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <!-- 2.1.2. Жагсаалтаас сонгож хайх-->
+                <aside class="menu box">
+                  <p class="menu-label">Food Groups</p>
+                  <ul class="menu-list" style="margin-top: 1rem;">
+                    <li>
+                      <a class="toggle-sublist">Cereals and Cereal products</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="2"> Barley flour, whole grain</li>
+                        <li><input type="checkbox" name="fn" value="3"> Barley flour, whole grain, pearled</li>
+                        <li><input type="checkbox" name="fn" value="6"> Barley, whole grain, pearled, raw</li>
+                        <li><input type="checkbox" name="fn" value="7"> Barley, whole grain, raw</li>
+                        <li><input type="checkbox" name="fn" value="10"> Bread, rye</li>
+                        <li><input type="checkbox" name="fn" value="11"> Bread, wheat</li>
+                        <li><input type="checkbox" name="fn" value="12"> Bread, wheat, multi-seeds </li>
+                        <li><input type="checkbox" name="fn" value="59"> Noodles, wheat, multi-seeds</li>
+                        <li><input type="checkbox" name="fn" value="60"> Oat flour, milled</li>
+                        <li><input type="checkbox" name="fn" value="62"> Oat, polished, raw</li>
+                        <li><input type="checkbox" name="fn" value="152"> Rye flour, milled</li>
+                        <li><input type="checkbox" name="fn" value="153"> Rye, whole grain, raw</li>
+                        <li><input type="checkbox" name="fn" value="158"> Wheat flour, brown</li>
+                        <li><input type="checkbox" name="fn" value="159"> Wheat flour, strong white</li>
+                        <li><input type="checkbox" name="fn" value="160"> Wheat flour, white</li>
+                        <li><input type="checkbox" name="fn" value="161"> Wheat flour, whole </li>
+                        <li><input type="checkbox" name="fn" value="171"> Wheat, whole grain, raw</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="toggle-sublist">Starchy Roots and Starch products</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="190"> Potato, raw</li>
+                        <li><input type="checkbox" name="fn" value="222"> Vermicelli, potato starch, raw</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="toggle-sublist">Pulses</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="261"> Peas, dry</li>
+                        <li><input type="checkbox" name="fn" value="270"> Soybean, dry</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="toggle-sublist">Nuts and Seeds</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="285"> Flax seed flour</li>
+                        <li><input type="checkbox" name="fn" value="286"> Flax seed, raw</li>
+                        <li><input type="checkbox" name="fn" value="296"> Pine nut, kernel, peeled, raw </li>
+                        <li><input type="checkbox" name="fn" value="297"> Pine nut, raw</li>
+                        <li><input type="checkbox" name="fn" value="303"> Sunflower seed, raw</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="toggle-sublist">Vegetables</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="319"> Basil, raw</li>
+                        <li><input type="checkbox" name="fn" value="322"> Beet, root, red, raw</li>
+                        <li><input type="checkbox" name="fn" value="323"> Beet, root, yellow, raw</li>
+                        <li><input type="checkbox" name="fn" value="352"> Broccoli, raw </li>
+                        <li><input type="checkbox" name="fn" value="359"> Cabbage, green, raw</li>
+                        <li><input type="checkbox" name="fn" value="361"> Cabbage, purple, raw</li>
+                        <li><input type="checkbox" name="fn" value="370"> Carrot, raw</li>
+                        <li><input type="checkbox" name="fn" value="377"> Cauliflower, raw </li>
+                        <li><input type="checkbox" name="fn" value="380"> Celery, raw</li>
+                        <li><input type="checkbox" name="fn" value="408"> Eggplant, raw</li>
+                        <li><input type="checkbox" name="fn" value="418"> Garlic, raw</li>
+                        <li><input type="checkbox" name="fn" value="430"> Kale, raw</li>
+                        <li><input type="checkbox" name="fn" value="440"> Lettuce, raw</li>
+                        <li><input type="checkbox" name="fn" value="468"> Parsley, raw</li>
+                        <li><input type="checkbox" name="fn" value="476"> Pepper, bell pepper, red, raw</li>
+                        <li><input type="checkbox" name="fn" value="490"> Pumpkin, raw</li>
+                        <li><input type="checkbox" name="fn" value="515"> Spinach, raw</li>
+                        <li><input type="checkbox" name="fn" value="520"> Spring onion, raw</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="toggle-sublist">Fruits</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="561"> Apple, small, raw</li>
+                        <li><input type="checkbox" name="fn" value="577"> Black currant, wild, frozen </li>
+                        <li><input type="checkbox" name="fn" value="578"> Blueberry, wild, frozen</li>
+                        <li><input type="checkbox" name="fn" value="585"> Cranberry, wild, frozen</li>
+                        <li><input type="checkbox" name="fn" value="587"> Currants, black, wild, frozen</li>
+                        <li><input type="checkbox" name="fn" value="642"> Musk melon, raw</li>
+                        <li><input type="checkbox" name="fn" value="659"> Peruvian groundcherry, raw</li>
+                        <li><input type="checkbox" name="fn" value="680"> Sea buckthorn, frozen</li>
+                        <li><input type="checkbox" name="fn" value="681"> Sea buckthorn, syrup</li>
+                        <li><input type="checkbox" name="fn" value="682"> Siberian crabapple fruit, wild, raw</li>
+                        <li><input type="checkbox" name="fn" value="685"> Strawberry, farm, raw</li>
+                        <li><input type="checkbox" name="fn" value="690"> Strawberry, wild, raw</li>
+                        <li><input type="checkbox" name="fn" value="697"> Watermelon, raw</li>
+                        <li><input type="checkbox" name="fn" value="704"> Вird cherry, wild, frozen</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="toggle-sublist">Meat and Meat products</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="707"> Beef, meat, boneless, raw</li>
+                        <li><input type="checkbox" name="fn" value="708"> Beef, meat, boneless, raw </li>
+                        <li><input type="checkbox" name="fn" value="716"> Goat, meat, boneless, raw</li>
+                        <li><input type="checkbox" name="fn" value="718"> Horse, meat, boneless, raw</li>
+                        <li><input type="checkbox" name="fn" value="723"> Reindeer, meat, boneless, raw, Taiga region</li>
+                        <li><input type="checkbox" name="fn" value="724"> Sheep, meat, boneless, raw</li>
+                        <li><input type="checkbox" name="fn" value="725"> Sheep, meat, boneless, raw</li>
+                        <li><input type="checkbox" name="fn" value="726"> Yak, Borts (dried meat)</li>
+                        <li><input type="checkbox" name="fn" value="727"> Yak, meat, boneless, raw</li>
+                        <li><input type="checkbox" name="fn" value="728"> Сamel, meat, boneless, raw</li>
+                      </ul>
+                    </li>
+                      <li>
+                      <a class="toggle-sublist">Eggs</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="732"> Egg, chichen, whole, raw</li>
+                      </ul>
+                    </li>
+                      <li>
+                      <a class="toggle-sublist">Fish and Fish products</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="772"> Humpback whitefish, canned, boiled</li>
+                        <li><input type="checkbox" name="fn" value="773"> Humpback whitefish, frozen</li>
+                      </ul>
+                    </li>
+                      <li>
+                      <a class="toggle-sublist">Milk and Milk products</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="807"> Cheese, Yak</li>
+                        <li><input type="checkbox" name="fn" value="811"> Cream, clotted, Yak, boiled</li>
+                        <li><input type="checkbox" name="fn" value="812"> Cream, milk</li>
+                        <li><input type="checkbox" name="fn" value="813"> Curd, Camel, dry </li>
+                        <li><input type="checkbox" name="fn" value="814"> Curd, dry  </li>
+                        <li><input type="checkbox" name="fn" value="815"> Curd, fresh </li>
+                        <li><input type="checkbox" name="fn" value="816"> Curd, Reindeer, dry</li>
+                        <li><input type="checkbox" name="fn" value="817"> Curd, Yak, sweet, dry</li>
+                        <li><input type="checkbox" name="fn" value="819"> Kumis (milk), mare</li>
+                        <li><input type="checkbox" name="fn" value="820"> Kumis (milk), mare</li>
+                        <li><input type="checkbox" name="fn" value="822"> Milk</li>
+                        <li><input type="checkbox" name="fn" value="824"> Milk, Camel</li>
+                        <li><input type="checkbox" name="fn" value="825"> Milk, Camel, fermented</li>
+                        <li><input type="checkbox" name="fn" value="826"> Milk, Goat</li>
+                        <li><input type="checkbox" name="fn" value="828"> Milk, mare</li>
+                        <li><input type="checkbox" name="fn" value="829"> Milk, mare</li>
+                        <li><input type="checkbox" name="fn" value="830"> Milk, Reindeer, raw</li>
+                        <li><input type="checkbox" name="fn" value="831"> Milk, UHT</li>
+                        <li><input type="checkbox" name="fn" value="833"> Milk, Yak</li>
+                        <li><input type="checkbox" name="fn" value="835"> Yoghurt</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="toggle-sublist">Oils and Fats</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="839"> Butter, 88% fat</li>
+                        <li><input type="checkbox" name="fn" value="840"> Ghee (butter), Yak</li>
+                        <li><input type="checkbox" name="fn" value="841"> Pine nut oil</li>
+                        <li><input type="checkbox" name="fn" value="842"> Sea buckthorn oil</li>
+                        <li><input type="checkbox" name="fn" value="843"> Sea buckthorn seed oil</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="toggle-sublist">Seasonings</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="859"> Cumin powder</li>
+                        <li><input type="checkbox" name="fn" value="875"> Pepper, chili, Jalapeno, raw</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="toggle-sublist">Prepared foods</a>
+                      <ul class="sublist is-hidden">
+                        <li><input type="checkbox" name="fn" value="887"> Biscuit, Kheviin boov, fried</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </aside>
+                
+              </div>
+              <!-- 2.2. Харуулах хэсэг -->
+              <div class="column">
+                <!-- Proximates -->
+                <div class="table-container box tbl">
+                  <h2 class="subtitle is-5 has-text-weight-bold has-text-centered">Proximates</h2>
+                  <table id="tblProximates" class="table is-striped is-bordered is-hoverable is-fullwidth">
+                    <thead>
+                      <tr>
+                        <th>Food name</th>
+                        <th>Energy</th>
+                        <th>Water</th>
+                        <th>Protein</th>
+                        <th>Fat</th>
+                        <th>Ash</th>
+                        <th>Carbohydrate</th>                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Barley flour, whole grain</td>
+                        <td>358 kcal</td>
+                        <td>9.7 g</td>
+                        <td>12.05 g</td>
+                        <td>0.55 g</td>
+                        <td>1.59 g</td>
+                        <td>76.13 g</td>
+                      </tr>
+                      <tr>
+                        <td>Barley flour, whole grain, pearled</td>
+                        <td>368 kcal</td>
+                        <td>7.7 g</td>
+                        <td>12.67 g</td>
+                        <td>1.32 g</td>
+                        <td>1.90 g</td>
+                        <td>76.40 g</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <br>
+                <!-- Minerals -->
+                <div class="table-container box tbl">
+                  <h2 class="subtitle is-5 has-text-weight-bold has-text-centered">Minerals</h2>
+                  <table id="tblMinerals" class="table is-striped is-bordered is-hoverable is-fullwidth">
+                    <thead>
+                      <tr>
+                        <th>Food name</th>
+                        <th>Calcium</th>
+                        <th>Iron</th>                        
+                        <th>Phosphorus</th>
+                        <th>Potassium</th>
+                        <th>Sodium </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Barley flour, whole grain</td>
+                        <td>100 mg</td>
+                        <td>18.70 mg</td>
+                        <td>24 mg</td>
+                        <td>7 mg</td>
+                        <td>2 mg</td>                          
+                      </tr>
+                      <tr>
+                        <td>Barley flour, whole grain, pearled</td>
+                        <td>99 mg</td>
+                        <td>27.32 mg</td>
+                        <td>28 mg</td>
+                        <td>5 mg</td>
+                        <td>4 mg</td>                          
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <br>
+                <!-- Vitamins -->
+                <div class="table-container box tbl">
+                  <h2 class="subtitle is-5 has-text-weight-bold has-text-centered">Vitamins</h2>
+                  <table id="tblMinerals" class="table is-striped is-bordered is-hoverable is-fullwidth">
+                    <thead>
+                      <tr>
+                        <th>Food name</th>
+                        <th>Vitamin A</th>
+                        <th>Thiamin</th>
+                        <th>Riboflavin</th>
+                        <th>Vitamin C</th>
+                        <th>Refuse</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Barley flour, whole grain</td>
+                        <td>1 μg</td>
+                        <td>0.280 mg</td>
+                        <td>0.110 mg</td>
+                        <td>22.95 mg</td>
+                        <td>0.0 %</td>                          
+                      </tr>
+                      <tr>
+                        <td>Barley flour, whole grain, pearled</td>
+                        <td>1 μg</td>
+                        <td>0.421 mg</td>
+                        <td>0.128 mg</td>
+                        <td>15.57 μg</td>
+                        <td>0.0 %</td>                          
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+              </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="infoModal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title" id="modalTitle">Аймгийн нэр</p>
+          <button class="delete" aria-label="close" onclick="closeModal()"></button>
+        </header>
+        <section class="modal-card-body">
+          <p id="modalContent">Аймгийн мэдээлэл энд гарна.</p>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-primary" onclick="closeModal()">Close</button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="/dist/js/navbar.js"></script>
+    <script src="/dist/js/map.js"></script>
+    <script src="/dist/js/aside.js"></script>
+
+
+
+  </body>
+</html>
