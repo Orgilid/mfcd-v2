@@ -91,7 +91,7 @@
       };
   
       // SVG-г fetch хийж оруулах
-      fetch('img/map.svg')
+      fetch('./img/map.svg')
         .then(response => response.text())
         .then(svgData => {
           document.getElementById('svg-container').innerHTML = svgData;
