@@ -22494,6 +22494,17 @@ has-background-danger.is-hoverable:active {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
+.navbar-brand .image img {
+  max-width: 64px;
+  height: auto;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* зураг, текстийн хооронд зай */
+}
+
 .center,
 .center-column,
 .top,
@@ -22606,6 +22617,29 @@ has-background-danger.is-hoverable:active {
 
 .toggle-sublist .icon {
   margin-right: 0.5rem;
+}
+
+/* Холбоо барих */
+.custom-link {
+  color: #363636; /* Bulma primary color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-link:hover {
+  color: #ff914d;
+  text-decoration: underline;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */
