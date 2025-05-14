@@ -176,6 +176,6 @@ $primary: $primaryColor;
   border-radius: 6px;
 }
 .fixed-height {
-  height: 250px;
+  max-height: 250px;
   overflow-y: auto;
 }
