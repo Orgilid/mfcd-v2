@@ -2,91 +2,91 @@
       const aimagInfo = {
         MN061: {
           title: "Dornod",
-          content: "Дорнод аймаг"
+          content: "Sample Information Database"
         },
         MN0710: {
           title: "Bayan-Ulgii",
-          content: "Баян-Өлгий аймаг"
+          content: "Sample Information Database"
         },
         MN043: {
           title: "Khovd",
-          content: "Ховд аймаг"
+          content: "Sample Information Database"
         },
         MN051: {
           title: "Sukhbaatar",
-          content: "Сүхбаатар аймаг"
+          content: "Sample Information Database"
         },
         MN063: {
           title: "Dornogovi",
-          content: "Дорноговь аймаг"
+          content: "Sample Information Database"
         },
         MN0650: {
           title: "Govi-Altai",
-          content: "Говь-Алтай аймаг"
+          content: "Sample Information Database"
         },
         MN0690: {
           title: "Bayankhongor",
-          content: "Баянхонгор аймаг"
+          content: "Sample Information Database"
         },
         MN053: {
           title: "Umnugovi",
-          content: "Өмнөговь аймаг"
+          content: "Sample Information Database"
         },
         MN041: {
           title: "Khuvsgul",
-          content: "Хөвсгөл аймаг"
+          content: "Sample Information Database"
         },
         MN067: {
           title: "Bulgan",
-          content: "Булган аймаг"
+          content: "Sample Information Database"
         },
         MN046: {
           title: "Uvs",
-          content: "Увс аймаг"
+          content: "Sample Information Database"
         },
         MN049: {
           title: "Selenge",
-          content: "Сэлэнгэ аймаг"
+          content: "Sample Information Database"
         },
         MN0570: {
           title: "Zavkhan",
-          content: "Завхан аймаг"
+          content: "Sample Information Database"
         },
         MN039: {
           title: "Khentii",
-          content: " аймаг"
+          content: "Sample Information Database"
         },
         MN037: {
           title: "Darkhan-Uul",
-          content: " аймаг"
+          content: "Sample Information Database"
         },
         MN047: {
           title: "Tuv",
-          content: " аймаг"
+          content: "Sample Information Database"
         },
         MN073: {
           title: "Arkhangai",
-          content: " аймаг"
+          content: "Sample Information Database"
         },
         MN035: {
           title: "Orkhon",
-          content: " аймаг"
+          content: "Sample Information Database"
         },
         MN059: {
           title: "Dundgovi",
-          content: " аймаг"
+          content: "Sample Information Database"
         },
         MN055: {
           title: "Uvurkhangai",
-          content: " аймаг"
+          content: "Sample Information Database"
         },
         MN064: {
           title: "Govi-Sumber",
-          content: " аймаг"
+          content: "Sample Information Database"
         },
         MN1: {
           title: "Ulaanbaatar",
-          content: " аймаг"
+          content: "Sample Information Database"
         }        
       };
   
