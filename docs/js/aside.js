@@ -1,9 +1,1 @@
-  document.addEventListener('DOMContentLoaded', function () {
-    const toggles = document.querySelectorAll('.toggle-sublist');
-    toggles.forEach(function (toggle) {
-      toggle.addEventListener('click', function () {
-        const sublist = this.nextElementSibling;
-        sublist.classList.toggle('is-hidden');
-      });
-    });
-  });
+document.addEventListener("DOMContentLoaded",function(){let e=document.querySelectorAll(".toggle-sublist");e.forEach(function(e){e.addEventListener("click",function(){let e=this.nextElementSibling;e.classList.toggle("is-hidden")})})});
