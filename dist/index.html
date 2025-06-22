@@ -52,22 +52,17 @@
     <section id="hero" class="hero is-fullheight">
       <div class="hero-body">
         <div class="container">
-          <h1 class="is-size-4-mobile is-size-3-tablet is-size-2-desktop has-text-weight-semibold has-text-centered txt-h">Food Composition Table</h1>
+          <h1 class="is-size-4-mobile is-size-3-tablet is-size-2-desktop has-text-weight-semibold has-text-centered txt-h">Food Composition Database Introduction</h1>
           <div class="columns is-descktop">
             <div class="column is-two-thirds-desktop">
               <div id="svg-container"></div>
             </div>
             <div class="column is-one-third-desktop content">
               <p class="txt">
-                In Mongolia, the first “Food composition table” was established
-                and published in 1997. It contains information for the following
-                eight groups of products. In the first FCT, a total of 12
-                nutrients of protein, fat, carbohydrates, fiber, ash, and
-                vitamins A, C, E, Ca, K, Na, and Fe are covered in 288 products
-                of the above eight groups. It was managed by the Ministry of
-                Food, agriculture, and Light Industry. The FCT is available in
-                hard copy. It contains few types of foods and has not been
-                updated for more than 20 years.
+This Web application is supported by a grant from the Asian Food and Agriculture Cooperation Initiative (AFACI) “Establishment of Asian Food Composition Database” project funded by the Rural Development Administration (RDA) of Korea. 
+The first phase of the project was implemented from 2024 to 2027. Within the framework of this phase, 16 types of compositional data were identified for a total of 99 agricultural products across 14 groups, and this data has been applied to the website.
+On this website, you can view the compositional data and calorie content of the 99 agricultural food raw materials mentioned above, along with sample information and related manuals.
+The second phase of the project is being implemented from 2024 to 2027, with the goal of adding information on 100 agricultural foods and raw materials and 10 traditional Mongolian dishes.                
               </p>              
             </div>
           </div>
@@ -641,8 +636,25 @@
           <!-- 3.2. Тооцоолол хийж харуулах хэсэг --> 
           <div id="resultCalculatedTbl" class="column">
             <div class="notification is-success is-light">
-              Please select the food items to calculate from the list. The <strong>total energy</strong> content per 100 grams of each food will be calculated and displayed, showing the percentage of <strong> protein, fat,</strong> and <strong>carbohydrates</strong>. When you adjust the amount of each food item, the overall result will be recalculated.
+              Please select the food items to calculate from the list. The <strong>total energy</strong> content per 100 grams of each food will be calculated and displayed, showing the percentage of <strong> protein, fat,</strong> and <strong>carbohydrates</strong>. When you adjust the amount of each food item, the overall result will be recalculated.              
             </div>
+
+            <div class="notification is-info is-light mt-3">
+              <strong>Calculated Energy</strong><br>
+              <code>Calculated Energy (kcal) = (Protein × 4) + (Fat × 9) + (Carbohydrate × 4)</code><br>
+              ➥ This calculates the total energy derived from protein, fat, and carbohydrates.
+            </div>
+
+            <div class="notification is-warning is-light mt-3">
+              <strong>Energy Contribution %</strong><br>
+              <code>% Protein Energy = (Protein × 4 / Calculated Energy) × 100</code><br>
+              <code>% Fat Energy = (Fat × 9 / Calculated Energy) × 100</code><br>
+              <code>% Carbohydrate Energy = (Carbohydrate × 4 / Calculated Energy) × 100</code><br>
+              ➥ This shows the sources of energy: how much percentage of the total energy comes from protein, fat, and carbohydrates.
+            </div>
+
+
+
           </div>
         </div>
       </div>
@@ -663,6 +675,7 @@
                 <!-- <h2 class="title is-5 has-text-centered">Guidelines for The Mongolian Food Composition</h2>                -->
                 <p class="content">
                   In Mongolia, the first “Food composition table” was established and published in 1997. It contains information for the following eight groups of products. It includes: Meat and meat products; Milk and dairy products; Cereals and their products; Vegetables; Fruits and their products; Fat, oils; Sugar contents products; Alcoholic. In the first FCT, a total of 12 nutrients of protein, fat, carbohydrates, fiber, ash, and vitamins A, C, E, Ca, K, Na, and Fe are covered in 288 products of the above eight groups. It was managed by the Ministry of Food, agriculture, and Light Industry. The FCT is available in hard copy. It contains few types of foods and has not been updated for more than 20 years.
+
                 </p>                
               </div>
               <footer class="card-footer" style="justify-content: center;">                
