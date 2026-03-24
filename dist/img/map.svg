@@ -1,4 +1,18 @@
     <svg baseprofile="tiny" fill="#2BAC73" height="481" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" version="1.2" viewbox="0 0 1000 481" width="1000" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <g id="map-pin">
+    <path
+      d="M0,-11
+         C-5.3,-11 -9,-7.4 -9,-2.9
+         C-9,1.3 -6.7,4.9 -3.9,8.5
+         C-2.4,10.4 -1.4,12.1 -0.3,15.5
+         C0.6,12.4 1.9,10.7 3.7,8.4
+         C6.8,4.5 9,1.1 9,-2.9
+         C9,-7.4 5.3,-11 0,-11 Z"
+      fill="#EF6F76"/>
+    <circle cx="0" cy="-3.2" r="2.5" fill="#fff"/>
+  </g>
+</defs>
         <g id="features">
          <path d="M860.6 274.6l-2.4-2.8-5.8-9.4-0.4-0.5-0.4-0.4-0.6-0.2-12 0.6-5.3 1.1-13 0.5-2.5 0.7-4.8 2.4-3.4-6.3-1.7-2.5-0.8-0.9-0.9-0.8-0.8-0.6-0.9-0.5-3.1-1.3-0.5-0.3-0.5-0.4-0.3-0.6-0.3-0.8-0.1-1.1 0.1-3.3 0.9-7.6-0.2-1.1-0.4-0.5-0.6-0.5-5-2.7-12.9-10.4-17.1-3.8-5.5-2.6-1.5-0.3-0.8 0-0.8 0.1-1 0.3-4.8 2.6 0.3-5-0.3-3.8-1.2-5.3-1.2-2.5-0.3-0.6-1.5-2.9-0.7-7.2 0.4-2.9 0.7-1.8 0-2.5-0.3-2.4-0.5-1.7-1.7-4.3-5.5-10.3-1.1-2.6-0.5-1.5 0.3-1 0.7-2.1 0-0.8-0.1-1.2-1.1-3.2-0.9-5.8-0.1-2 0.1-0.2 0.1-0.2 0.5-0.4 0.2-0.4 0.1-0.3 0-0.2-0.1-0.3-2.1-3 0-0.1 8.6-3.9 1.2-0.2 3.1 0.3 2.5 1.3 0.8 0.2 0.9 0 1.2-0.4 2.6-1.3 1.7-1.5 0.6-0.5 0.6-0.3 0.6-0.1 1.5-0.1 0.5-0.3 0.3-1 0-1.5 0.1-0.7 0.3-0.8 2-4 0.7-1 0.8-0.9 5.8-4.4 0.7-1.1 0.5-0.4 1.5-1.1 0.5-0.5 1.4-1.2 4.9-2.6 0.6-0.1 1.2 0.2 0.6 0 0.4-0.2 3.4-3.5 0.6-0.4 1.2-0.3 0.6-0.3 1.7-1.8 2.4-1.4 2.4-0.9 1.3 0.2 2.6 1.3 1.4 0.4 5.2-0.8 2.7 0.7 6.9 4 0.5 0.5 0.4 0.6 0.6 1.3 0.4 0.6 4.1 4.6 4.5 3.4 0.5 0.2 1.8-0.1 0.6 0.2 1 0.1 2-0.4 3 0.7 0.9 0 1-0.3 8.5-5 2.4-0.7 2.3 0.1 2.3 0.9 7.8 3.1 1.2 1.1 1 1.5 0.9 1.7-6 13.4-0.4 1.1-6 13.5-5.9 13.4-0.1 0.7 0.4 1.5 0 0.8-0.5 1.3-7 10.9 0.1 1.1 0 0.7 0.6 8.4-0.1 0.9-4.1 2.6-0.1 0.1-1.1 0.7-2.3 1-0.6 0.8 0 0.4 0.4 2.7 0 0.2 0.9 5.4 0.3 0.2 0.1 0.5 0.7 0.9 7.2 7.7 1.7 0.9 1.7-1.1 3.1-4.1 2.8-1.8 1.7-0.6 5.2 1.2 2 0 7.2-1.6 2-0.1 0.8 0.1 3.4 1.5 2.1 0.8 0.7 0.4 6.9 6.5 1.3 0.1 1.1-1.4 0.5-0.9 0.2-0.2 0.9-1.5 0.5-0.4 1.5-1.3 6-8 0.8-0.7 1.3-0.5 4.5 0.3 0.7 0 1.9-0.9 1.6-0.3 1.7 0 0.7 0.2 1.3 0.8 0.8 0.2 5.4 0.4 2 1 1.8 2.2 3 5 1.5 1.6 5.8 2.6 2.5 0.9 0.7 0.5 0.4 0.6 0.2 0.8 0.3 3 0.2 0.7 0.3 0.5 0.3 0.2 0 0.1 0.3 0.1 0.1 0 2.6 1.1 1.1 0.3 0.6 0.4 0.2 0.6-0.2 0.4-0.6 0.9-0.2 0.6 1.1 0.4 4.4 4 0.4 0.5 0.4 0.8 0.2 0.7 0.4 0.5 0.7 0.2 0.1 0.2 0.4-0.1 0.5 0.2 1.2 0.9 2 2.4 0.8 1.2 0.7 1.5 0.2 0.8 0 2.4 0.1 0.5 0.1 0.3 0.1 0.2 0.4 0.6 0.9 1 0.4 0.5 0.2 0.3 0 0.4 0.2 0.3 0.2 0.3 0.3 0.1 0.5 0 0.3 0.1 0.1 0.3-0.1 0.4-0.2 0.3-0.1 0.3 0 0.6 0.1 0.2 0.1 0.1 0.1 0.2 0.2 0 0.1 0.2 0 0.2-0.1 0.3 0 0.3 0 0.9-0.4 1.3 0 0.7 0.1 0.4 0.4 0.7 0.1 0.3 0 0.4-0.2 0.3-0.2 0.3-0.2 0.3-0.1 0.1-0.2 0.5-0.4 0.4-0.7-0.3-1-0.1-0.2 0.6-0.2 0.3-0.5 0.7-0.2 0.2-0.7 0.4-0.4 0.2-0.8 0.8-0.1 0.1-0.3 0-0.6-0.1-1-0.9-0.6-0.1-0.7 0-2.1-0.4-1.4 0.1-2.5 0.6-1.3 0-7.2-2-0.7-0.3-0.7-0.6-0.8-1.7-0.5-0.7-0.6 0.2-0.7 0.8-0.4 0.3-0.5-0.2-0.3-0.5-0.1-0.7-0.2-0.6-0.6-0.3-0.9 0.3-0.7 0.8-0.3 0.6-0.2 0.2 0 0.1-0.4 0.8-0.6 0.1-0.1-0.1-0.1 0.7-0.3 0.1-1-0.2-1.1-0.6-1-0.4-0.4 0.2-0.8 0.5-0.5 0.2-2.2 0-1.1-0.3-1.8-0.9-1-0.3-0.9-0.1-0.9 0-0.9 0.3-0.9 0.6-1.1 1-0.4 0.1-1.5 0.1-0.5 0.2-2.2 1.7-0.9 0.1-1.4 0.4-0.7 0.3-0.6 0.4-0.3 0.5-0.2 0-0.6 0.9-0.6 0.5-0.1 0-0.1 0.1 0 1-0.4 0.2-1.5 0.2-0.1-0.1-0.1 0.1-1.1 0.1-0.7-0.1-1.2-0.8-0.2-0.2-0.3-0.8-0.5-0.7-0.1-0.1-0.3-0.6-0.4-0.4-0.3 0-1.2 0.9-0.5 0.1-0.1 0-0.5-0.3-2.3 0.6 0.5 1.3 0 0.6-0.2 0.6-1 1.4-0.3 1.1-0.1 2.3-0.7 1.2 0 0.2-1.1 0.3-9.4-0.6-3.6-0.8-0.5 0-0.2 0.1-0.6 0.7-1.8 1.5-0.4 0.2-1.7 0.2-1.2 0.4-0.6 0.5z" id="MN061" name="Dornod">
          </path>
@@ -54,40 +68,66 @@
          </circle>
         </g>
         <g id="label_points">
-         <circle class="Dornod" cx="799.5" cy="165.5" id="MN061" r="5" fill="#EF6F76"></circle>
-         <circle class="Bayan-Ulgii" cx="106" cy="170.2" id="MN071"></circle>
-         <circle class="Hovd" cx="183.9" cy="237" id="MN043" r="5" fill="#EF6F76"></circle>
-         <circle class="HovdUrd" cx="153.9" cy="287" id="MN043" r="5" fill="#EF6F76"></circle>
-         <circle class="Sukhbaatar" cx="766.9" cy="279.1" id="MN051" r="5" fill="#EF6F76"></circle>
-         <circle class="Dornogovi" cx="673.4" cy="348.4" id="MN063" r="5" fill="#EF6F76"></circle>
-         <circle class="Govi-Altai" cx="283.2" cy="307.9" id="MN065"></circle>
-         <circle class="Bayankhongor" cx="385.3" cy="308.7" id="MN069"></circle>
-         <circle class="Umnugovi" cx="511" cy="393" id="MN053" r="5" fill="#EF6F76"></circle>
-         <circle class="UmnugoviHoid" cx="521" cy="383" id="MN053" r="5" fill="#EF6F76"></circle>
-         <circle class="Khuvsgul" cx="390.8" cy="121.5" id="MN041" r="5" fill="#EF6F76"></circle>
-         <circle class="KhuvsgulHoidBaruun" cx="370.8" cy="80.5" id="MN041" r="5" fill="#EF6F76"></circle>
-         <circle class="KhuvsgulHoidZuun" cx="350.8" cy="70.5" id="MN041" r="5" fill="#EF6F76"></circle>
-         <circle class="KhuvsgulBaruun" cx="350.8" cy="131.5" id="MN041" r="5" fill="#EF6F76"></circle>
-         <circle class="KhuvsgulZuun" cx="440.8" cy="131.5" id="MN041" r="5" fill="#EF6F76"></circle>
-         <circle class="Bulgan" cx="482.7" cy="165.5" id="MN067" r="5" fill="#EF6F76" ></circle>
-         <circle class="Uvs" cx="186" cy="133.9" id="MN046" r="5" fill="#EF6F76"></circle>
-         <circle class="Selenge" cx="541.7" cy="112.6" id="MN049" r="5" fill="#EF6F76"></circle>
-         <circle class="SelengeZuun" cx="608.7" cy="132.6" id="MN049" r="5" fill="#EF6F76"></circle>
-         <circle class="SelengeUrd" cx="578.7" cy="170.6" id="MN049" r="5" fill="#EF6F76"></circle>
-         <circle class="Zavkhan" cx="292.4" cy="192.3" id="MN057"></circle>
-         <circle class="Hentii" cx="688.3" cy="208.4" id="MN039" r="5" fill="#EF6F76"></circle>
-         <circle class="HentiiBinder" cx="688.3" cy="168.4" id="MN039" r="5" fill="#EF6F76"></circle>
-         <circle class="Darkhan-Uul" cx="565.9" cy="145.6" id="MN037" r="5" fill="#EF6F76"></circle>
-         <circle class="Tuv" cx="553.6" cy="222.4" id="MN047" r="5" fill="#EF6F76"></circle>
-         <circle class="Arhangai" cx="428.2" cy="207.6" id="MN073" r="5" fill="#EF6F76"></circle>
-         <circle class="ArhangaiBaruun" cx="408.2" cy="217.6" id="MN073" r="5" fill="#EF6F76"></circle>
-         <circle class="ArhangaiZuun" cx="448.2" cy="217.6" id="MN073" r="5" fill="#EF6F76"></circle>
-         <circle class="Orkhon" cx="515.7" cy="160.6" id="MN035" r="3" fill="#EF6F76"></circle>
-         <circle class="Dundgovi" cx="570.9" cy="310.8" id="MN059" r="5" fill="#EF6F76"></circle>
-         <circle class="DundgoviHoish" cx="590.9" cy="290.8" id="MN059" r="5" fill="#EF6F76"></circle>
-         <circle class="Uvurkhangai" cx="464.4" cy="293" id="MN055" r="5" fill="#EF6F76"></circle>
-         <circle class="Govi-Sumber" cx="627.9" cy="214.8" id="MN064"></circle>
-         <circle class="Ulaanbaatar" cx="588.7" cy="205.6" id="MN1" r="5" fill="#EF6F76" ></circle>
-        </g>
-        
-       </svg>
+  <use href="#map-pin" class="Dornod" id="MN061" transform="translate(820.5 165.5) scale(1)"></use>
+  <text x="790.5" y="195.5" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Dornod</text>  
+
+  <use href="#map-pin" class="Khovd" id="MN043-main" transform="translate(163.9 237) scale(1)"></use>  
+  <use href="#map-pin" class="KhovdBulgan" id="MN043-south" transform="translate(153.9 287) scale(1)"></use>
+  <text x="185.9" y="257" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Khovd</text>
+
+  <use href="#map-pin" class="Sukhbaatar" id="MN051" transform="translate(766.9 259.1) scale(1)"></use>
+  <text x="766.9" y="289.1" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Sukhbaatar</text>
+
+  <use href="#map-pin" class="Dornogovi" id="MN063" transform="translate(673.4 328.4) scale(1)"></use>
+  <text x="673.4" y="358.4" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Dornogovi</text>
+
+  <use href="#map-pin" class="Umnugovi" id="MN053-main" transform="translate(511 373) scale(1)"></use>
+  <use href="#map-pin" class="UmnugoviHoid" id="MN053-north" transform="translate(521 363) scale(1)"></use>
+  <text x="511" y="403" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Umnugovi</text>
+
+  <use href="#map-pin" class="Khuvsgul" id="MN041-main" transform="translate(390.8 121.5) scale(1)"></use>
+  <use href="#map-pin" class="KhuvsgulHoidBaruun" id="MN041-nw" transform="translate(370.8 80.5) scale(1)"></use>
+  <use href="#map-pin" class="KhuvsgulHoidZuun" id="MN041-ne" transform="translate(350.8 70.5) scale(1)"></use>
+  <use href="#map-pin" class="KhuvsgulBaruun" id="MN041-west" transform="translate(350.8 131.5) scale(1)"></use>
+  <use href="#map-pin" class="KhuvsgulZuun" id="MN041-east" transform="translate(440.8 131.5) scale(1)"></use>
+  <text x="399.8" y="101.5" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Khuvsgul</text>
+
+  <use href="#map-pin" class="Bulgan" id="MN067" transform="translate(482.7 155.5) scale(1)"></use>
+  <use href="#map-pin" class="BulganHoidBaruun" id="MN067" transform="translate(492.7 135.5) scale(1)"></use>
+  <text x="482.7" y="185.5" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Bulgan</text>
+
+  <use href="#map-pin" class="Uvs" id="MN046" transform="translate(166 113.9) scale(1)"></use>
+  <text x="186" y="143.9" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Uvs</text>
+
+  <use href="#map-pin" class="Selenge" id="MN049-main" transform="translate(541.7 112.6) scale(1)"></use>
+  <use href="#map-pin" class="SelengeZuun" id="MN049-east" transform="translate(608.7 132.6) scale(1)"></use>
+  <use href="#map-pin" class="SelengeUrd" id="MN049-south" transform="translate(578.7 170.6) scale(1)"></use>
+  <text x="540.1" y="140.6" font-size="10" fill="white" text-anchor="middle" font-family="Times New Roman">Selenge</text>
+
+  <use href="#map-pin" class="Darkhan-Uul" id="MN037" transform="translate(565.9 128.6) scale(1)"></use>
+  <text x="548.9" y="155.6" font-size="10" fill="white" text-anchor="middle" font-family="Times New Roman">Darkhan-Uul</text>
+
+  <use href="#map-pin" class="Khentii" id="MN039-main" transform="translate(688.3 208.4) scale(1)"></use>
+  <use href="#map-pin" class="KhentiiBinder" id="MN039-binder" transform="translate(688.3 168.4) scale(1)"></use>
+  <text x="688.3" y="236.4" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Khentii</text>
+
+  <use href="#map-pin" class="Tuv" id="MN047" transform="translate(553.6 222.4) scale(1)"></use>
+  <use href="#map-pin" class="TuvBatsumber" id="MN047" transform="translate(553.6 180.4) scale(1)"></use>
+  <text x="583.6" y="252.4" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Tuv</text>
+
+  <use href="#map-pin" class="Ulaanbaatar" id="MN1" transform="translate(588.7 190.6) scale(1)"></use>
+  <text x="595.7" y="229.6" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Ulaanbaatar</text>
+
+  <use href="#map-pin" class="Arkhangai" id="MN073-main" transform="translate(428.2 190.6) scale(1)"></use>
+  <use href="#map-pin" class="ArkhangaiBaruun" id="MN073-west" transform="translate(408.2 198.6) scale(1)"></use>
+  <use href="#map-pin" class="ArkhangaiZuun" id="MN073-east" transform="translate(448.2 200.6) scale(1)"></use>
+  <text x="428.2" y="230.6" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Arkhangai</text>
+ 
+  <use href="#map-pin" class="Dundgovi" id="MN059-main" transform="translate(560.9 290.8) scale(1)"></use>
+  <use href="#map-pin" class="DundgoviHoish" id="MN059-north" transform="translate(580.9 276.8) scale(1)"></use>
+  <text x="570.9" y="320.8" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Dundgovi</text>
+
+  <use href="#map-pin" class="Uvurkhangai" id="MN055" transform="translate(474.4 268) scale(1)"></use>
+  <text x="470.4" y="293" font-size="12" fill="white" text-anchor="middle" font-family="Times New Roman">Uvurkhangai</text> 
+</g>
+</svg>
