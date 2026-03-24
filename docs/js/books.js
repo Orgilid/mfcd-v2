@@ -1,1 +1,13 @@
-function openPdfModal(e){let t=document.getElementById("pdfModal"),d=document.getElementById("pdfFrame");d.src=e+"#toolbar=0",t.classList.add("is-active")}function closePdfModal(){let e=document.getElementById("pdfModal"),t=document.getElementById("pdfFrame");e.classList.remove("is-active"),t.src=""}
+  function openPdfModal(url) {
+    const modal = document.getElementById('pdfModal');
+    const frame = document.getElementById('pdfFrame');
+    frame.src = url + '#toolbar=0'; // toolbar=0 нь татах товчийг нуухад тусалдаг
+    modal.classList.add('is-active');
+  }
+
+  function closePdfModal() {
+    const modal = document.getElementById('pdfModal');
+    const frame = document.getElementById('pdfFrame');
+    modal.classList.remove('is-active');
+    frame.src = '';
+  }

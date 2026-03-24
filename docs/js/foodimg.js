@@ -900,4 +900,37 @@ const allImages = [
   "img/foods/12_0001_014.jpg",
   "img/foods/12_0001_015.jpg",
 ];
-let slideshowImages=[],currentIndex=0;function showImages(e,s){if(0===(slideshowImages=allImages.filter(s=>s.includes(`/foods/${e}_`))).length){alert("No images found for "+s);return}currentIndex=0,document.getElementById("slideshowImage").src=slideshowImages[currentIndex],document.getElementById("modalImgTitle").textContent=s,document.getElementById("imageModal").classList.add("is-active")}function nextImage(){0!==slideshowImages.length&&(currentIndex=(currentIndex+1)%slideshowImages.length,document.getElementById("slideshowImage").src=slideshowImages[currentIndex])}function prevImage(){0!==slideshowImages.length&&(currentIndex=(currentIndex-1+slideshowImages.length)%slideshowImages.length,document.getElementById("slideshowImage").src=slideshowImages[currentIndex])}function closeImgModal(){document.getElementById("imageModal").classList.remove("is-active")}
+let slideshowImages = [];
+let currentIndex = 0;
+
+function showImages(foodCode, foodName) {
+  slideshowImages = allImages.filter(img => img.includes(`/foods/${foodCode}_`));
+  if (slideshowImages.length === 0) {
+    alert("No images found for " + foodName);
+    return;
+  }
+
+  currentIndex = 0;
+  document.getElementById("slideshowImage").src = slideshowImages[currentIndex];
+  document.getElementById("modalImgTitle").textContent = foodName;
+  document.getElementById("imageModal").classList.add("is-active");
+}
+
+
+
+
+function nextImage() {
+  if (slideshowImages.length === 0) return;
+  currentIndex = (currentIndex + 1) % slideshowImages.length;
+  document.getElementById("slideshowImage").src = slideshowImages[currentIndex];
+}
+
+function prevImage() {
+  if (slideshowImages.length === 0) return;
+  currentIndex = (currentIndex - 1 + slideshowImages.length) % slideshowImages.length;
+  document.getElementById("slideshowImage").src = slideshowImages[currentIndex];
+}
+
+function closeImgModal() {
+  document.getElementById("imageModal").classList.remove("is-active");
+}
